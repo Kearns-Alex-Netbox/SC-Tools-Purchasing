@@ -250,7 +250,7 @@ Public Class CriticalBuildPath
 	Private Sub Remove_Button_Click() Handles Remove_Button.Click
 		'Removes the selected product from our list of products that we want to build.
 		If BuildProducts_ListBox.SelectedItems.Count <> 0 Then
-			BuildProducts_ListBox.Items.Remove(BuildProducts_ListBox.SelectedIndex)
+			BuildProducts_ListBox.Items.RemoveAt(BuildProducts_ListBox.SelectedIndex)
 			'We have changed the situation so disable the excel button so the user does not create under misinformation.
 			Excel_Button.Enabled = False
 		End If
