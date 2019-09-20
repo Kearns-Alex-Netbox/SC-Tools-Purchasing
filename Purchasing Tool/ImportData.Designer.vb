@@ -23,17 +23,17 @@ Partial Class ImportData
 	<System.Diagnostics.DebuggerStepThrough()> _
 	Private Sub InitializeComponent()
 		Me.Label3 = New System.Windows.Forms.Label()
-		Me.TB_ALPHAitemsIndicatorLight = New System.Windows.Forms.TextBox()
-		Me.TB_QBitemsIndicatorLight = New System.Windows.Forms.TextBox()
-		Me.TB_QBIndicatorLight = New System.Windows.Forms.TextBox()
-		Me.TB_PCADIndicatorLight = New System.Windows.Forms.TextBox()
 		Me.CkB_ALPHAitems = New System.Windows.Forms.CheckBox()
-		Me.TB_ALPHAIndicatorLight = New System.Windows.Forms.TextBox()
 		Me.RTB_Results = New System.Windows.Forms.RichTextBox()
 		Me.SaveOutput_Button = New System.Windows.Forms.Button()
 		Me.Import_Button = New System.Windows.Forms.Button()
 		Me.Close_Button = New System.Windows.Forms.Button()
 		Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+		Me.TB_ALPHAIndicatorLight = New System.Windows.Forms.TextBox()
+		Me.TB_PCADIndicatorLight = New System.Windows.Forms.TextBox()
+		Me.TB_ALPHAitemsIndicatorLight = New System.Windows.Forms.TextBox()
+		Me.TB_QBIndicatorLight = New System.Windows.Forms.TextBox()
+		Me.TB_QBitemsIndicatorLight = New System.Windows.Forms.TextBox()
 		Me.GroupBox1.SuspendLayout
 		Me.SuspendLayout
 		'
@@ -47,86 +47,15 @@ Partial Class ImportData
 		Me.Label3.TabIndex = 55
 		Me.Label3.Text = "Import Data"
 		'
-		'TB_ALPHAitemsIndicatorLight
-		'
-		Me.TB_ALPHAitemsIndicatorLight.BackColor = System.Drawing.Color.White
-		Me.TB_ALPHAitemsIndicatorLight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.TB_ALPHAitemsIndicatorLight.Cursor = System.Windows.Forms.Cursors.Hand
-		Me.TB_ALPHAitemsIndicatorLight.ForeColor = System.Drawing.Color.Black
-		Me.TB_ALPHAitemsIndicatorLight.Location = New System.Drawing.Point(6, 45)
-		Me.TB_ALPHAitemsIndicatorLight.Name = "TB_ALPHAitemsIndicatorLight"
-		Me.TB_ALPHAitemsIndicatorLight.ReadOnly = true
-		Me.TB_ALPHAitemsIndicatorLight.Size = New System.Drawing.Size(118, 20)
-		Me.TB_ALPHAitemsIndicatorLight.TabIndex = 44
-		Me.TB_ALPHAitemsIndicatorLight.Text = "ALPHA Items"
-		Me.TB_ALPHAitemsIndicatorLight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-		'
-		'TB_QBitemsIndicatorLight
-		'
-		Me.TB_QBitemsIndicatorLight.BackColor = System.Drawing.Color.White
-		Me.TB_QBitemsIndicatorLight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.TB_QBitemsIndicatorLight.Cursor = System.Windows.Forms.Cursors.Hand
-		Me.TB_QBitemsIndicatorLight.ForeColor = System.Drawing.Color.Black
-		Me.TB_QBitemsIndicatorLight.Location = New System.Drawing.Point(6, 97)
-		Me.TB_QBitemsIndicatorLight.Name = "TB_QBitemsIndicatorLight"
-		Me.TB_QBitemsIndicatorLight.ReadOnly = true
-		Me.TB_QBitemsIndicatorLight.Size = New System.Drawing.Size(118, 20)
-		Me.TB_QBitemsIndicatorLight.TabIndex = 48
-		Me.TB_QBitemsIndicatorLight.Text = "QB Items"
-		Me.TB_QBitemsIndicatorLight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-		'
-		'TB_QBIndicatorLight
-		'
-		Me.TB_QBIndicatorLight.BackColor = System.Drawing.Color.White
-		Me.TB_QBIndicatorLight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.TB_QBIndicatorLight.Cursor = System.Windows.Forms.Cursors.Hand
-		Me.TB_QBIndicatorLight.ForeColor = System.Drawing.Color.Black
-		Me.TB_QBIndicatorLight.Location = New System.Drawing.Point(6, 123)
-		Me.TB_QBIndicatorLight.Name = "TB_QBIndicatorLight"
-		Me.TB_QBIndicatorLight.ReadOnly = true
-		Me.TB_QBIndicatorLight.Size = New System.Drawing.Size(118, 20)
-		Me.TB_QBIndicatorLight.TabIndex = 46
-		Me.TB_QBIndicatorLight.Text = "QB BOM"
-		Me.TB_QBIndicatorLight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-		'
-		'TB_PCADIndicatorLight
-		'
-		Me.TB_PCADIndicatorLight.BackColor = System.Drawing.Color.White
-		Me.TB_PCADIndicatorLight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.TB_PCADIndicatorLight.Cursor = System.Windows.Forms.Cursors.Hand
-		Me.TB_PCADIndicatorLight.ForeColor = System.Drawing.Color.Black
-		Me.TB_PCADIndicatorLight.Location = New System.Drawing.Point(6, 71)
-		Me.TB_PCADIndicatorLight.Name = "TB_PCADIndicatorLight"
-		Me.TB_PCADIndicatorLight.ReadOnly = true
-		Me.TB_PCADIndicatorLight.Size = New System.Drawing.Size(118, 20)
-		Me.TB_PCADIndicatorLight.TabIndex = 45
-		Me.TB_PCADIndicatorLight.Text = "PCAD BOM"
-		Me.TB_PCADIndicatorLight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-		'
 		'CkB_ALPHAitems
 		'
-		Me.CkB_ALPHAitems.AutoSize = true
 		Me.CkB_ALPHAitems.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
 		Me.CkB_ALPHAitems.Location = New System.Drawing.Point(15, 69)
 		Me.CkB_ALPHAitems.Name = "CkB_ALPHAitems"
 		Me.CkB_ALPHAitems.Size = New System.Drawing.Size(131, 44)
 		Me.CkB_ALPHAitems.TabIndex = 39
-		Me.CkB_ALPHAitems.Text = "Import ALPHA"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Items"
+		Me.CkB_ALPHAitems.Text = "Import SMT Items"
 		Me.CkB_ALPHAitems.UseVisualStyleBackColor = true
-		'
-		'TB_ALPHAIndicatorLight
-		'
-		Me.TB_ALPHAIndicatorLight.BackColor = System.Drawing.Color.White
-		Me.TB_ALPHAIndicatorLight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.TB_ALPHAIndicatorLight.Cursor = System.Windows.Forms.Cursors.Hand
-		Me.TB_ALPHAIndicatorLight.ForeColor = System.Drawing.Color.Black
-		Me.TB_ALPHAIndicatorLight.Location = New System.Drawing.Point(6, 19)
-		Me.TB_ALPHAIndicatorLight.Name = "TB_ALPHAIndicatorLight"
-		Me.TB_ALPHAIndicatorLight.ReadOnly = true
-		Me.TB_ALPHAIndicatorLight.Size = New System.Drawing.Size(118, 20)
-		Me.TB_ALPHAIndicatorLight.TabIndex = 43
-		Me.TB_ALPHAIndicatorLight.Text = "ALPHA BOM"
-		Me.TB_ALPHAIndicatorLight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
 		'
 		'RTB_Results
 		'
@@ -136,7 +65,7 @@ Partial Class ImportData
 		Me.RTB_Results.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
 		Me.RTB_Results.Location = New System.Drawing.Point(151, 14)
 		Me.RTB_Results.Name = "RTB_Results"
-		Me.RTB_Results.Size = New System.Drawing.Size(622, 520)
+		Me.RTB_Results.Size = New System.Drawing.Size(622, 517)
 		Me.RTB_Results.TabIndex = 42
 		Me.RTB_Results.Text = ""
 		'
@@ -183,9 +112,79 @@ Partial Class ImportData
 		Me.GroupBox1.Location = New System.Drawing.Point(15, 119)
 		Me.GroupBox1.Name = "GroupBox1"
 		Me.GroupBox1.Size = New System.Drawing.Size(130, 149)
-		Me.GroupBox1.TabIndex = 56
+		Me.GroupBox1.TabIndex = 57
 		Me.GroupBox1.TabStop = false
 		Me.GroupBox1.Text = "Results"
+		'
+		'TB_ALPHAIndicatorLight
+		'
+		Me.TB_ALPHAIndicatorLight.BackColor = System.Drawing.Color.White
+		Me.TB_ALPHAIndicatorLight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.TB_ALPHAIndicatorLight.Cursor = System.Windows.Forms.Cursors.Hand
+		Me.TB_ALPHAIndicatorLight.ForeColor = System.Drawing.Color.Black
+		Me.TB_ALPHAIndicatorLight.Location = New System.Drawing.Point(6, 19)
+		Me.TB_ALPHAIndicatorLight.Name = "TB_ALPHAIndicatorLight"
+		Me.TB_ALPHAIndicatorLight.ReadOnly = true
+		Me.TB_ALPHAIndicatorLight.Size = New System.Drawing.Size(118, 20)
+		Me.TB_ALPHAIndicatorLight.TabIndex = 43
+		Me.TB_ALPHAIndicatorLight.Text = "SMT BOM"
+		Me.TB_ALPHAIndicatorLight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+		'
+		'TB_PCADIndicatorLight
+		'
+		Me.TB_PCADIndicatorLight.BackColor = System.Drawing.Color.White
+		Me.TB_PCADIndicatorLight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.TB_PCADIndicatorLight.Cursor = System.Windows.Forms.Cursors.Hand
+		Me.TB_PCADIndicatorLight.ForeColor = System.Drawing.Color.Black
+		Me.TB_PCADIndicatorLight.Location = New System.Drawing.Point(6, 71)
+		Me.TB_PCADIndicatorLight.Name = "TB_PCADIndicatorLight"
+		Me.TB_PCADIndicatorLight.ReadOnly = true
+		Me.TB_PCADIndicatorLight.Size = New System.Drawing.Size(118, 20)
+		Me.TB_PCADIndicatorLight.TabIndex = 45
+		Me.TB_PCADIndicatorLight.Text = "PCAD BOM"
+		Me.TB_PCADIndicatorLight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+		'
+		'TB_ALPHAitemsIndicatorLight
+		'
+		Me.TB_ALPHAitemsIndicatorLight.BackColor = System.Drawing.Color.White
+		Me.TB_ALPHAitemsIndicatorLight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.TB_ALPHAitemsIndicatorLight.Cursor = System.Windows.Forms.Cursors.Hand
+		Me.TB_ALPHAitemsIndicatorLight.ForeColor = System.Drawing.Color.Black
+		Me.TB_ALPHAitemsIndicatorLight.Location = New System.Drawing.Point(6, 45)
+		Me.TB_ALPHAitemsIndicatorLight.Name = "TB_ALPHAitemsIndicatorLight"
+		Me.TB_ALPHAitemsIndicatorLight.ReadOnly = true
+		Me.TB_ALPHAitemsIndicatorLight.Size = New System.Drawing.Size(118, 20)
+		Me.TB_ALPHAitemsIndicatorLight.TabIndex = 44
+		Me.TB_ALPHAitemsIndicatorLight.Text = "SMT Items"
+		Me.TB_ALPHAitemsIndicatorLight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+		'
+		'TB_QBIndicatorLight
+		'
+		Me.TB_QBIndicatorLight.BackColor = System.Drawing.Color.White
+		Me.TB_QBIndicatorLight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.TB_QBIndicatorLight.Cursor = System.Windows.Forms.Cursors.Hand
+		Me.TB_QBIndicatorLight.ForeColor = System.Drawing.Color.Black
+		Me.TB_QBIndicatorLight.Location = New System.Drawing.Point(6, 123)
+		Me.TB_QBIndicatorLight.Name = "TB_QBIndicatorLight"
+		Me.TB_QBIndicatorLight.ReadOnly = true
+		Me.TB_QBIndicatorLight.Size = New System.Drawing.Size(118, 20)
+		Me.TB_QBIndicatorLight.TabIndex = 46
+		Me.TB_QBIndicatorLight.Text = "QB BOM"
+		Me.TB_QBIndicatorLight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+		'
+		'TB_QBitemsIndicatorLight
+		'
+		Me.TB_QBitemsIndicatorLight.BackColor = System.Drawing.Color.White
+		Me.TB_QBitemsIndicatorLight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.TB_QBitemsIndicatorLight.Cursor = System.Windows.Forms.Cursors.Hand
+		Me.TB_QBitemsIndicatorLight.ForeColor = System.Drawing.Color.Black
+		Me.TB_QBitemsIndicatorLight.Location = New System.Drawing.Point(6, 97)
+		Me.TB_QBitemsIndicatorLight.Name = "TB_QBitemsIndicatorLight"
+		Me.TB_QBitemsIndicatorLight.ReadOnly = true
+		Me.TB_QBitemsIndicatorLight.Size = New System.Drawing.Size(118, 20)
+		Me.TB_QBitemsIndicatorLight.TabIndex = 48
+		Me.TB_QBitemsIndicatorLight.Text = "QB Items"
+		Me.TB_QBitemsIndicatorLight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
 		'
 		'ImportData
 		'
@@ -210,15 +209,15 @@ Partial Class ImportData
 End Sub
 
 	Friend WithEvents Label3 As Label
-	Friend WithEvents TB_ALPHAitemsIndicatorLight As TextBox
-	Friend WithEvents TB_QBitemsIndicatorLight As TextBox
-	Friend WithEvents TB_QBIndicatorLight As TextBox
-	Friend WithEvents TB_PCADIndicatorLight As TextBox
 	Friend WithEvents CkB_ALPHAitems As CheckBox
-	Friend WithEvents TB_ALPHAIndicatorLight As TextBox
 	Friend WithEvents RTB_Results As RichTextBox
 	Friend WithEvents SaveOutput_Button As Button
 	Friend WithEvents Import_Button As Button
 	Friend WithEvents Close_Button As Button
 	Friend WithEvents GroupBox1 As GroupBox
+	Friend WithEvents TB_ALPHAIndicatorLight As TextBox
+	Friend WithEvents TB_PCADIndicatorLight As TextBox
+	Friend WithEvents TB_ALPHAitemsIndicatorLight As TextBox
+	Friend WithEvents TB_QBIndicatorLight As TextBox
+	Friend WithEvents TB_QBitemsIndicatorLight As TextBox
 End Class
